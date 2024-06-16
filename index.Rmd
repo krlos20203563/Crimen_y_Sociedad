@@ -1,0 +1,72 @@
+---
+title: "Información descriptiva sobre la información sociodemográfica"
+author: Alis Trillo, Regina Alvarez, Illapa Cotrina, Daniel Silva, Gonzalo Pacheo, Carlos Crespín
+date: "`r format(Sys.Date(), '%d de %B de %Y')`"
+output: 
+  flexdashboard::flex_dashboard:
+    storyboard: true
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard) # always
+```
+
+
+### Edades de los participantes
+
+```{r}
+readRDS("bp_age.rds")
+```
+
+### ¿Continua estudiando?
+
+```{r}
+readRDS("pc_e1.rds")
+```
+
+### ¿Qué nivel están cursando?
+```{r}
+readRDS("pc_e2.rds")
+```
+
+### Antes de ingresar al centro ¿vivía con su mamá?
+
+```{r}
+readRDS("pc_fam1.rds")
+```
+
+### Antes de ingresar al centro ¿vivía con su papá?
+
+```{r}
+readRDS("pc_fam2.rds")
+```
+
+### Antes de ingresar al centro ¿vivía con sus hermanos?
+
+```{r}
+readRDS("pc_fam3.rds")
+```
+
+### Antes de ingresar al centro ¿vivía con algún otro familiar?
+
+```{r}
+readRDS("pc_fam4.rds")
+```
+
+### Tiempo dentro del centro y tiempo de sentencia
+
+```{r}
+readRDS("bpT.rds")
+```
+
+### Infracciones
+
+```{r}
+readRDS("bar_inf.rds")
+```
+
+***
+
+La información contenida en esta presentación es sumamente sensible y se recomienda
+encarecidamente mantener la confidencialidad del mismo.
+
